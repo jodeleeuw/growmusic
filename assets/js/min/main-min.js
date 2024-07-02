@@ -1,0 +1,1 @@
+$(document).ready(function(){window.onscroll=function(o){var t=$("#last").offset().top;$(window).scrollTop()>t?$(".row.about-tina").addClass("showPortrait"):$(".row.about-tina").removeClass("showPortrait")}});

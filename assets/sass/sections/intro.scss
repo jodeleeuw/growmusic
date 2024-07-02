@@ -1,0 +1,81 @@
+
+/*	Intro
+	----- */
+
+.grow-music-intro {
+	text-align: center;
+	overflow: hidden;
+
+	.rowContent {
+		padding: 6%;
+		padding-top: 0;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+63,7db9e8+100&0.3+0,0.3+63,0+100 */
+background: -moz-linear-gradient(left,  rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.3) 63%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.3) 63%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.3) 63%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+63,7db9e8+100&0.4+0,0.4+63,0+100 */
+background: -moz-linear-gradient(left,  rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 63%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 63%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 63%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+
+	}
+	.site-navItem {
+		position: relative;
+	}
+	.site-navItem:before {
+		content: "";
+		height: 1px;
+		border-top: 2px solid #ddd;
+		position: absolute;
+		left: 40%;
+		right: 40%;
+	}
+	.site-navItem:first-child:before {
+		display: none;
+	}
+}
+
+
+@media screen and (min-width: $medium) {
+	.grow-music-intro {
+		.site-navItem:before {
+			border-color: #fff;
+			left: 0;
+			right: auto;
+			width: 20%;
+		}
+		.intro {
+			font-size: 1.3em;
+			font-style: italic;
+		}
+		& {
+			overflow: hidden;
+/*			background: url(../img/t-wide.jpg) no-repeat;
+			background-size: cover;
+			background-position: top center;
+			background-attachment: fixed; */
+			min-height: 100vh;
+			position: relative;
+			padding: 0;
+			text-align: left;
+			z-index: 1;
+		}
+		&::before {
+		    content: ' ';
+		    position: fixed;
+		    width: 100%;
+		    height: 100%;
+		    top: 0;
+		    left: 0;
+			background: url("../img/t-wide.jpg") no-repeat;
+		    background-size: cover;
+		    will-change: transform;
+		    background-position: top center;
+		    z-index: -1;
+		}
+	}
+}

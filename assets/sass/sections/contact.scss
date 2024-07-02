@@ -1,0 +1,70 @@
+.row.contact {
+
+	text-align: center;
+	background-color: #85defe;
+	background-position: bottom center, bottom center;
+	background-image: url("../img/contact-footer-grow.png"), url("../img/contact-footer-soil.png");
+	background-repeat: no-repeat, repeat-x;
+	padding-bottom: 16em;
+	background-size: 17em, 21em;
+	border-bottom: 2em solid #531E00;
+	position: relative;
+	z-index: 6;
+	
+	a {
+		color: #0058B0;
+	}
+	a:hover,
+	a:visited:hover {
+		color: #fff;
+	}
+
+
+	.intro {
+	    margin-bottom: 2em;
+	    text-align: center;	
+	}
+	h2 {
+		text-align: center;
+	}
+	h2:after {
+		left: 40%;
+		right: 40%;
+	}
+
+	.card {
+
+		max-width: 26em;
+		overflow: hidden;
+		margin: 0 auto;
+		font-size: 86%;
+		
+		.card-col {
+			float: left;
+		}
+		.col--logo {
+			text-align: right;
+		}
+		p, h3 {
+			margin: 0;
+		}
+		p {
+			padding: .25em 0;
+		}
+		img {
+			max-width: 4em;
+		}
+		.card--title {
+			font-style: italic;
+			margin-bottom: 1em;
+		}
+	}
+	.col--info {
+		text-align: left;
+		padding-left: 4%;
+	}
+	
+	@media screen and (min-width: $small) {
+		text-align: left;
+	}	
+}
